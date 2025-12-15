@@ -1,0 +1,22 @@
+package Queue;
+/* Insert and remove elements from a Queue */
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Prog_3 {
+    public static void main(String[] args) {
+
+        Queue<Integer> queue = new LinkedList<>();
+
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
+
+        System.out.println(queue);
+
+        int removedElement = queue.poll();
+        System.out.println(removedElement);
+
+        System.out.println(queue);
+    }
+}
